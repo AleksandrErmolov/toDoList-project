@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.yellow-block {
+    width: 120%;
+    background-color: #FFDC40;
+    height: 28px;
+}
+
+.card {
+    width: 336px;
+    margin: 200px auto;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+    overflow: hidden;
+}
+
+.main-block {
+    margin-top: 13px;
+}
+
+.main-block h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.sort button {
+    background-image: url(./img/sortDown.svg);
+    width: 25px;
+    height: 15px;
+    margin-top: 21px;
+    margin-left: 275px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.sort button:hover {
+    background-image: url(./img/sortDownAnimation.svg);
+}
+
+.input {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 250px;
+    border-radius: 0px;
+    border: 0px;
+    margin-left: 2px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.enter-block {
+    display: flex;
+    border: 1px solid #C4C4C4;
+    width: 286px;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    margin-top: 13px;
+    border-radius: 10px;
+}
+
+.enter-block button {
+    display: block;
+    background-color: transparent;
+    background-image: url(./img/delete.svg);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    border: 0;
+}
+
+.enter-block button:hover {
+    background-image: url(./img/deleteAnimation.svg);
+}
+
+.button-round {
+    display: flex;
+}
+
+.button-round button {
+    display: flex;
+    margin: 18px auto;
+    border-radius: 21px;
+    background-color: #833AE0;
+    width: 150px;
+    height: 42px;
+    border: 0px;
+    color: white;
+    align-items: center;
+    font-size: 14px;
+}
+
+.button-round button:hover {
+    color: gold;
+}
+
+.button-round span {
+    display: flex;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    background-color: #9953F1;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
