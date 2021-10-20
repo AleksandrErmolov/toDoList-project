@@ -29,7 +29,7 @@
     font-size: 26px;
 }
 
-.sort button {
+.button-Sort {
     background-image: url(./img/sortDown.svg);
     width: 25px;
     height: 15px;
@@ -39,11 +39,25 @@
     background-color: transparent;
 }
 
-.sort button:hover {
+.button-Sort:hover {
     background-image: url(./img/sortDownAnimation.svg);
 }
 
-.input {
+.button-Sort-two {
+    background-image: url(./img/sortUp.svg);
+    width: 25px;
+    height: 15px;
+    margin-top: 21px;
+    margin-left: 275px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.button-Sort-two:hover {
+    background-image: url(./img/sortUpAnimation.svg);
+}
+
+.main-input {
     display: block;
     margin: 0 auto;
     height: 30px;
@@ -53,7 +67,7 @@
     margin-left: 2px;
 }
 
-input:focus {
+.main-input:focus {
     outline: 0;
 }
 
@@ -70,7 +84,7 @@ input:focus {
     border-radius: 10px;
 }
 
-.enter-block button {
+.delete-task {
     display: block;
     background-color: transparent;
     background-image: url(./img/delete.svg);
@@ -80,7 +94,7 @@ input:focus {
     border: 0;
 }
 
-.enter-block button:hover {
+.delete-task:hover {
     background-image: url(./img/deleteAnimation.svg);
 }
 
