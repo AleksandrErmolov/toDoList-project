@@ -1,18 +1,26 @@
 let order = "ASK";
 const taskList = []; // создаём массив, куда потом будем пушить и сортировать
 
+const container = document.querySelector(".container")
 const buttonSort = document.querySelector(".button-Sort") //получаем доступ к кнопке sort
 const mainInput = document.querySelector(".main-input") //получаем доступ к первому инпуту
 const buttonRound = document.querySelector(".button-round") //получаем доступ к главной кнопке
 const addDiv = document.querySelector(".list-container") //доступ к диву, куда будем добавлять
 
 buttonRound.addEventListener("click", renderTask)
+container.addEventListener("keyup", (event) => {
+    console.log(event.key)
+    if (event.key === "Enter") {
+        renderTask();
+    }
+})
 buttonSort.addEventListener("click", sortTask)
 
 
 //рисуем задачи
 function renderTask() {
-    //Очищаем документ перед добавлением    
+
+    //Очищаем документ перед добавлением
     addDiv.innerHTML = ""
 
     //Вызываем функциию, для добавления элемента в Массив  
@@ -33,6 +41,7 @@ function renderTask() {
         newButton.addEventListener("click", deleteTask)
         newButton.classList.add("delete-task")
         mainInput.value = ""
+
     });
 }
 
@@ -41,6 +50,7 @@ function renderTask() {
 function addTask() {
     let answear;
 
+    //Проверяем на пустое значение
     if (mainInput.value.trim() === '') {
         answear = confirm("Вы ввели пустую строку. Вы уверены, что хотите добавить задачу?")
         if (answear) {

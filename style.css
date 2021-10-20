@@ -25,11 +25,13 @@
 }
 
 .main-block h1 {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     text-align: center;
     font-size: 26px;
 }
 
 .button-Sort {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-image: url(./img/sortDown.svg);
     width: 25px;
     height: 15px;
@@ -41,6 +43,7 @@
 
 .button-Sort:hover {
     background-image: url(./img/sortDownAnimation.svg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .button-Sort-two {
@@ -51,10 +54,12 @@
     margin-left: 275px;
     border: 0px;
     background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .button-Sort-two:hover {
     background-image: url(./img/sortUpAnimation.svg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .main-input {
@@ -92,14 +97,22 @@
     width: 21px;
     height: 21px;
     border: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .delete-task:hover {
     background-image: url(./img/deleteAnimation.svg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+
+.fake {
+    display: inline-block;
+    margin
+}
 .button-round {
     display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .button-round button {
