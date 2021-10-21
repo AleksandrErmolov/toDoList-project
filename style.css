@@ -89,6 +89,36 @@
     border-radius: 10px;
 }
 
+.enter-block-1 {
+    display: flex;
+    border: 1px solid #C4C4C4;
+    width: 286px;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    margin-top: 13px;
+    border-radius: 10px;
+}
+
+.enter-block-2 {
+    display: flex;
+    border: 3px solid #9953F1;
+    width: 286px;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    margin-top: 13px;
+    border-radius: 10px;
+}
+
+.move {
+    cursor: move;
+}
+
 .delete-task {
     display: block;
     background-color: transparent;
@@ -105,11 +135,10 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
 .fake {
     display: inline-block;
-    margin
 }
+
 .button-round {
     display: flex;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -142,4 +171,8 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+}
+
+.selected {
+    opacity: 0.6;
 }
